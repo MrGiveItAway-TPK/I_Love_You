@@ -67,7 +67,9 @@ function start() {
 const button = document.querySelector(".heart-like-button");
 button.addEventListener("click", () => {
 	button.classList.add("liked");
-	start()
+	document.getElementById("start_button").disabled = true;
+	button.disabled = true;
+	start();
 });
 
 const audio = document.querySelector("audio");
