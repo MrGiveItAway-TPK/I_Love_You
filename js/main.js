@@ -69,3 +69,9 @@ button.addEventListener("click", () => {
 	button.classList.add("liked");
 	start()
 });
+
+const audio = document.querySelector("audio");
+
+audio.addEventListener('ended', (event) => {
+	window.location.reload();
+});
